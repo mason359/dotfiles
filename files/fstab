@@ -1,0 +1,6 @@
+
+gravytrain:/support /mnt/gravytrain/support nfs user,rw,exec,vers=3 0 0
+gravytrain:/release /mnt/gravytrain/release nfs user,rw,exec,vers=3 0 0
+gravytrain:/home /mnt/gravytrain/home nfs user,rw,exec,vers=3 0 0
+gravytrain:/build /mnt/gravytrain/build nfs user,rw,exec,vers=3 0 0
+gravytrain:/external_sources /mnt/gravytrain/external_sources nfs user,rw,exec,vers=3 0 0
