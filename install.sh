@@ -3,8 +3,6 @@ sleep 60
 
 cp files/ssh_config ~/.ssh/config
 
-sudo apt install zsh
-sudo chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" &
 rm ~/.zshrc.pre-oh-my-zsh
 cp files/.zshrc ~/.zshrc
