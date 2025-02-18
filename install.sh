@@ -32,8 +32,8 @@ ssh-keyscan -4 hg submit >> ~/.ssh/known_hosts
 hg clone --stream --config extensions.qumulo=! ssh://hg@hg.eng.qumulo.com/tools ~/tools
 hg clone --stream --config extensions.qumulo=! ssh://hg@hg.eng.qumulo.com/src ~/src
 
-sudo apt install nfs-common
-sudo apt install cifs-utils
+sudo apt install -y nfs-common
+sudo apt install -y cifs-utils
 
 sudo mkdir -p /mnt/gravytrain/home
 sudo mkdir -p /mnt/gravytrain/release
