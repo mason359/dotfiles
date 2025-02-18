@@ -23,6 +23,7 @@ cp files/vim-ripgrep.vim ~/.vim/plugin
 cp files/my_config.vim ~/.vim_runtime
 cp files/.vimrc ~
 cp files/agnoster.zsh-theme ~/.oh-my-zsh/themes
+source ~/.vimrc
 
 curl -s https://gravyweb.eng.qumulo.com/build/latest/src/build/toolchain/bootstrap.sh | bash
 # export PATH="/opt/qumulo/toolchain/bin:${PATH}"
