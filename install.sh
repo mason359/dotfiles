@@ -1,4 +1,7 @@
 #!/bin/bash
+sleep 60
+
+cp files/ssh_config ~/.ssh/config
 
 sudo apt install zsh
 sudo chsh -s $(which zsh)

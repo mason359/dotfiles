@@ -1,0 +1,23 @@
+Host gitlab.corp.qumulo.com
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/gitlab_id_ed25519
+
+Host jump
+  HostName mq-jump.eng.qumulo.com
+  User mqadmin
+
+Host access
+  HostName access.missionq.qumulo.com
+  User mqadmin
+  ProxyCommand ssh -W %h:%p mqadmin@mq-jump.eng.qumulo.com
+  ProxyJump mq-jump.eng.qumulo.com
+
+Host ep1
+  HostName ep1.qumulo.com
+  User mqadmin
+
+# To use ScaleFT proxycommand, add this configuration block to your $HOME/.ssh/config
+Match exec "/usr/bin/sft resolve -q  %h" !user git
+    ProxyCommand "/usr/bin/sft" proxycommand  %h
+    UserKnownHostsFile /home/mmurphy/.local/share/ScaleFT/proxycommand_known_hosts
+
