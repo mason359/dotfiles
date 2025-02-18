@@ -7,6 +7,7 @@ sudo apt install zsh
 sudo chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" &
 rm ~/.zshrc.pre-oh-my-zsh
+cp files/.zshrc ~/.zshrc
 
 sudo git clone https://github.com/zolrath/wemux.git /usr/local/share/wemux
 sudo ln -s /usr/local/share/wemux/wemux /usr/local/bin/wemux
